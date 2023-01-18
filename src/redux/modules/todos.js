@@ -1,34 +1,31 @@
 import { v4 as uuidv4 } from 'uuid';
 
 // 1. action item 만들기.
-// 2. action creators 만들기.
-// 3. reducer를 구성할 때 사용할 initialState 만들기.
-// 4. reducer 만들기.
-// 5. export
-
 const ADD_TODO = 'ADD_TODO';
 const REMOVE_TODO = 'REMOVE_TODO';
 const SWITCH_TODO = 'SWITCH_TODO';
 
-export const addTodo = () => {
+// 2. action creators 만들기.
+export const addTodo = (payload) => {
   return {
     type: ADD_TODO,
     payload: payload,
   };
 };
-export const removeTodo = () => {
+export const removeTodo = (payload) => {
   return {
     type: REMOVE_TODO,
     payload,
   };
 };
-export const switchTodo = () => {
+export const switchTodo = (payload) => {
   return {
     type: SWITCH_TODO,
     payload: payload,
   };
 };
 
+// 3. reducer를 구성할 때 사용할 initialState 만들기.
 const initialState = [
   {
     id: uuidv4(),
@@ -44,6 +41,7 @@ const initialState = [
   },
 ];
 
+// 4. reducer 만들기.
 const todos = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
@@ -62,3 +60,6 @@ const todos = (state = initialState, action) => {
       return state;
   }
 };
+
+// 5. export
+export default todos;
