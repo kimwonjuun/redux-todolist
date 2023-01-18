@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => {
-  return <footer>복습만이 살 길.</footer>;
+  return <footer>복습!</footer>;
 };
 
 export default Footer;
