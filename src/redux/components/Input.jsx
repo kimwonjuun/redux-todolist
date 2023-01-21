@@ -26,13 +26,13 @@ const Input = () => {
       contents,
       isDone: false,
     };
-    // todos.js 에 양식이 있음
+    // todos.js 에 양식이 있음.
 
     dispatch(addTodo(newTodo));
-    // todos.js 에 4번 reducer 생성 부분임 addTodo 이니 그 중 첫 번째 case
+    // todos.js 에 4번 reducer 생성 부분임 addTodo 이니 그 중 첫 번째 case.
   };
 
-  // 1. submitBtnClick 생성 -> TodoList로 넘어가 store 에 있는 todos 가져오기
+  // 1. submitBtnClick 생성 -> TodoList로 넘어가 store 에 있는 todos 가져오기.
   //
   //
   //
@@ -62,6 +62,4 @@ const StyledInputArea = styled.div`
   font-size: large;
   font-weight: 600;
   text-align: center;
-  /* display: flex; */
-  /* justify-content: space-between; */
 `;

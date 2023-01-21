@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Header = () => {
-  return <StyledHeaderArea>TODO APP</StyledHeaderArea>;
+  return <StyledHeaderArea>TODOLIST</StyledHeaderArea>;
 };
 
 export default Header;
@@ -13,6 +13,4 @@ const StyledHeaderArea = styled.div`
   font-size: x-large;
   font-weight: 700;
   text-align: center;
-  /* display: flex;
-    justify-content: space-between; */
 `;
